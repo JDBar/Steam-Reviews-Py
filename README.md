@@ -10,7 +10,7 @@ import steam_reviews
 reviews = steam_reviews.get('748600') # warning! this is a blocking operation!
 ```
 
-### steam_reviews.get(appid)
+### steam_reviews.get(appid, printProgress=false)
 > Accepts a Steam App ID as a string, and returns a list of reviews, each with the following structure:
 ```Python
 {
@@ -37,6 +37,7 @@ reviews = steam_reviews.get('748600') # warning! this is a blocking operation!
     'written_during_early_access': bool # true if the user posted this review while the game was in Early Access
 }
 ```
+> If printProgress is set to True, the function will print to the console every time a request to the Steam Web API succeeds.
 
 ## :heavy_plus_sign: Dependencies
 This script uses **[Requests](http://docs.python-requests.org/en/latest/user/install/#install)**.

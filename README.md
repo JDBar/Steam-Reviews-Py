@@ -10,7 +10,7 @@ import steam_reviews
 reviews = steam_reviews.get('748600') # warning! this is a blocking operation!
 ```
 
-### steam_reviews.get(appid, printProgress=false)
+### steam_reviews.get(appid, printProgress=False)
 > Accepts a Steam App ID as a string, and returns a list of reviews, each with the following structure:
 ```Python
 {

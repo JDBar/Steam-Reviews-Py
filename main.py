@@ -1,8 +1,5 @@
 import requests
 
-ENDPOINT = "https://store.steampowered.com/appreviews/"
-
-def getSteamReviews(appid='404200'):
   """Request reviews from the Steam Web API and return them as a list.\n
   **appid** -- The Steam App ID obtained from the game's stoe page URL
   """
@@ -45,4 +42,3 @@ def getSteamReviews(appid='404200'):
   
   return results
 
-print('Found {amount} results.'.format(amount=len(getSteamReviews())))

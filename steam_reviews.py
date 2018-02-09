@@ -1,6 +1,6 @@
 import requests
 
-def getSteamReviews(appid, printProgress=False):
+def get(appid, printProgress=False):
     '''Request reviews from the Steam Web API and return them as a list. This is a blocking call that may take some time, depending on how many reviews there are.\n
     **appid** -- The Steam App ID as a string obtained from the game's store page URL\n
     **progress** -- Set to true to print the progress of each request.
